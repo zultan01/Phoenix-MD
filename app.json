@@ -14,7 +14,7 @@
     "HANDLERS": {
       "description": "Enter Prefix For Commands",
       "required": false,
-      "value": ","
+      "value": "."
     },
     "SUDO": {
       "description": "Enter Numbers With Country Code Without + Separated With , To Add More Numbers",
@@ -30,6 +30,11 @@
       "description": "Enter Your Sticker PackName And Author Name",
       "required": false,
       "value": "🎯𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳;𝙰𝚋𝚑𝚒𝚜𝚑𝚎𝚔 𝚂𝚞𝚛𝚎𝚜𝚑☘️"
+    },
+    "AUTO_DATA": {
+      "description": "Enter Your Audio Data",
+      "required": false,
+      "value": "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg"
     },
     "OWNER_NAME": {
       "description": "Enter Your Owner Name",
