@@ -9,7 +9,7 @@ DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 
 
 module.exports = {
-  //For Enabling Commands Like AUTO_STATUS_RED Type true For Desenabling Type false
+  //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   //_________________________________________________________________________________________________________________________________
   LOGS: toBool(process.env.LOGS) || true,
@@ -55,6 +55,8 @@ module.exports = {
   BOT_NAME: process.env.BOT_NAME || "Phoenix-MD",
   //_________________________________________________________________________________________________________________________________
   WORK_TYPE: process.env.WORK_TYPE || "public",
+  //_________________________________________________________________________________________________________________________________
+  MENTION_DATA: "Phoenix-MD;919074692450;https://graph.org/file/63942461d4b8d78b360d3.jpg;https://graph.org/file/bb3ac71ec991cef3d5216.mp4",
   //_________________________________________________________________________________________________________________________________
   BASE_URL: "https://abhi-api-bvws.onrender.com/",
   //_________________________________________________________________________________________________________________________________
