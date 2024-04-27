@@ -1,4 +1,4 @@
-const { command, getUrl } = require("../lib");
+const { pnix, getUrl } = require("../lib");
 const got = require("got");
 const fs = require("fs");
 const { PluginDB, installPlugin } = require("../lib/database/plugins");
@@ -7,7 +7,7 @@ const { PluginDB, installPlugin } = require("../lib/database/plugins");
 
 pnix(
   {
-    pattern: "install",
+    pattern: "plugin",
     fromMe: true,
     desc: "Installs External plugins",
     type: "owner",
@@ -76,7 +76,7 @@ pnix(
 
 
 
-command(
+pnix(
   {
     pattern: "remove(?: |$)(.*)",
     fromMe: true,
