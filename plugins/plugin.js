@@ -1,24 +1,24 @@
-const { pnix } = require("../lib");
+const { pnix, getUrl } = require("../lib");
 const got = require("got");
 const fs = require("fs");
 const { PluginDB, installPlugin } = require("../lib/database/plugins");
+
 
 
 pnix(
   {
     pattern: "plugin",
     fromMe: true,
-    desc: "Installs External plugins",
     type: "owner",
   },
   async (message, match) => {
-    if (!match) return await message.reply("_Enter A Plugin Url_");
+    if (!match) return await message.sendMessage("_Enter A Plugin Url_");
 
     try {
       var url = new URL(match);
     } catch (e) {
       console.log(e);
-      return await message.reply("_Invalid Url_");
+      return await message.sendMessage("_Invalid Plugin Url ❌_");
     }
 
     if (url.host === "gist.github.com") {
@@ -40,12 +40,12 @@ pnix(
         require("./" + plugin_name);
       } catch (e) {
         fs.unlinkSync(__dirname + "/" + plugin_name + ".js");
-        return await message.reply("Invalid Plugin\n ```" + e + "```");
+        return await message.sendMessage("Invalid Plugin\n ```" + e + "```");
       }
 
       await installPlugin(url, plugin_name);
 
-      await message.reply(`_New Plugin Installed: ${plugin_name}_`);
+      await message.sendMessage(`_New Plugin Installed : *${plugin_name}*_`);
     }
   }
 );
@@ -58,7 +58,7 @@ pnix(
     var mesaj = "";
     var plugins = await PluginDB.findAll();
     if (plugins.length < 1) {
-      return await message.reply("_No External Plugins Installed_");
+      return await message.sendMessage("_No External Plugins Installed_");
     } else {
       plugins.map((plugin) => {
         mesaj +=
@@ -68,7 +68,7 @@ pnix(
           plugin.dataValues.url +
           "\n";
       });
-      return await message.reply(mesaj);
+      return await message.sendMessage(mesaj);
     }
   }
 );
@@ -79,21 +79,20 @@ pnix(
   {
     pattern: "remove(?: |$)(.*)",
     fromMe: true,
-    desc: "Remove external plugins",
-    type: "user",
+    type: "owner",
   },
   async (message, match) => {
-    if (!match) return await message.reply("_Enter The Name Of The Plugin You Want To Remove_");
+    if (!match) return await message.sendMessage("_Enter The Name Of The Plugin You Want To Remove_");
 
     var plugin = await PluginDB.findAll({ where: { name: match } });
 
     if (plugin.length < 1) {
-      return await message.reply("_No Plugin Found_");
+      return await message.sendMessage("_No Plugin Found_");
     } else {
       await plugin[0].destroy();
       delete require.cache[require.resolve("./" + match + ".js")];
       fs.unlinkSync(__dirname + "/" + match + ".js");
-      await message.reply(`_Plugin *${match}* Deleted Successfully ✅_`);
+      await message.sendMessage(`_Plugin *${match}* Deleted Successfully ✅_`);
     }
   }
 );
