@@ -1,1 +1,100 @@
-function _0x1f3a(_0x1a3264,_0x2637b7){var _0x54a8cd=_0x54a8();return _0x1f3a=function(_0x1f3ad0,_0x5af7c2){_0x1f3ad0=_0x1f3ad0-0x84;var _0x267d08=_0x54a8cd[_0x1f3ad0];return _0x267d08;},_0x1f3a(_0x1a3264,_0x2637b7);}var _0x471154=_0x1f3a;(function(_0x8e42ac,_0x38d008){var _0x16d102=_0x1f3a,_0x4eab1f=_0x8e42ac();while(!![]){try{var _0x592472=-parseInt(_0x16d102(0xa6))/0x1*(-parseInt(_0x16d102(0xac))/0x2)+-parseInt(_0x16d102(0x9f))/0x3+-parseInt(_0x16d102(0xa1))/0x4*(-parseInt(_0x16d102(0x8c))/0x5)+parseInt(_0x16d102(0xaa))/0x6+parseInt(_0x16d102(0xb4))/0x7+parseInt(_0x16d102(0x9b))/0x8+-parseInt(_0x16d102(0x9c))/0x9;if(_0x592472===_0x38d008)break;else _0x4eab1f['push'](_0x4eab1f['shift']());}catch(_0x3af7e3){_0x4eab1f['push'](_0x4eab1f['shift']());}}}(_0x54a8,0xf2ee7));function _0x54a8(){var _0x3dee21=['.js','random','6683004tvRwvc','dataValues','4520GdoQuG','got','toString','resolve','cache','Remove\x20installed\x20external\x20plugins','*Plugin\x20','match','5950091kVpaqR','Installs\x20external\x20plugins','host','name','split','url','Plugins','../lib/','Shows\x20all\x20installed\x20plugins','gist.githubusercontent.com','3722855UrVOCp','*:\x20','listplugin','remove(?:\x20|$)(.*)','*Need\x20a\x20external\x20installed\x20plugin\x20name*','destroy','owner','findAll','*Plugin\x20not\x20found*','substring','*Invalid\x20Plugin*\x0a\x20```','*No\x20external\x20plugins\x20installed*','writeFileSync','log','map','12157512ghaVyp','26456850Avgzwx','gist.github.com','*New\x20plugin\x20installed\x20:\x20','4049583pXqrWT','*Invalid\x20Url!*','8wEVjbR','unlinkSync','reply','length','replace','138DtcLaz','\x20deleted*'];_0x54a8=function(){return _0x3dee21;};return _0x54a8();}const {pnix}=require(_0x471154(0x89)),got=require(_0x471154(0xad)),fs=require('fs'),{PluginDB,installPlugin}=require('../lib/database')[_0x471154(0x88)];pnix({'pattern':'plugin','fromMe':!![],'desc':_0x471154(0xb5),'type':'owner'},async({match:_0x2ef89b,message:_0xc89f83})=>{var _0x30016a=_0x471154;if(!_0x2ef89b)return _0xc89f83[_0x30016a(0xa3)]('*Send\x20a\x20valid\x20plugin\x20url*');try{var _0x495516=new URL(_0x2ef89b);}catch(_0x1da48d){return console[_0x30016a(0x99)](_0x1da48d),_0xc89f83['reply'](_0x30016a(0xa0));}_0x495516[_0x30016a(0x84)]===_0x30016a(0x9d)?(_0x495516[_0x30016a(0x84)]=_0x30016a(0x8b),_0x495516=_0x495516['toString']()+'/raw'):_0x495516=_0x495516[_0x30016a(0xae)]();var _0x5508f6,{body:_0x43da54,statusCode:_0x3b37a8}=await got(_0x495516);if(_0x3b37a8==0xc8){var _0x40f2e7=_0x43da54[_0x30016a(0xb3)](/(?<=pattern:) ["'](.*?)["']/);_0x5508f6=_0x40f2e7[0x0][_0x30016a(0xa5)](/["']/g,'')['trim']()[_0x30016a(0x86)]('\x20')[0x0];!_0x5508f6&&(_0x5508f6='__'+Math[_0x30016a(0xa9)]()[_0x30016a(0xae)](0x24)[_0x30016a(0x95)](0x8));fs[_0x30016a(0x98)](__dirname+'/'+_0x5508f6+_0x30016a(0xa8),_0x43da54);try{require('./'+_0x5508f6);}catch(_0x2687ae){return fs['unlinkSync'](__dirname+'/'+_0x5508f6+_0x30016a(0xa8)),_0xc89f83['reply'](_0x30016a(0x96)+_0x2687ae+'```');}await installPlugin(_0x495516,_0x5508f6),await _0xc89f83['reply'](_0x30016a(0x9e)+_0x5508f6+'_*');}}),pnix({'pattern':_0x471154(0x8e),'fromMe':!![],'desc':_0x471154(0x8a),'type':_0x471154(0x92)},async({message:_0x35d298})=>{var _0x423fff=_0x471154,_0x560bc9='',_0xa6e637=await PluginDB['findAll']();return _0xa6e637[_0x423fff(0xa4)]<0x1?_0x35d298[_0x423fff(0xa3)](_0x423fff(0x97)):(_0xa6e637[_0x423fff(0x9a)](_0x9555f3=>{var _0x4bcaae=_0x423fff;_0x560bc9+='*'+_0x9555f3[_0x4bcaae(0xab)][_0x4bcaae(0x85)]+_0x4bcaae(0x8d)+_0x9555f3[_0x4bcaae(0xab)][_0x4bcaae(0x87)]+'\x0a';}),_0x35d298[_0x423fff(0xa3)](_0x560bc9));}),pnix({'pattern':_0x471154(0x8f),'fromMe':!![],'desc':_0x471154(0xb1),'type':_0x471154(0x92)},async({message:_0x2c2025,match:_0x5f381c})=>{var _0x1baa07=_0x471154;if(!_0x5f381c)return _0x2c2025[_0x1baa07(0xa3)](_0x1baa07(0x90));var _0x2adcbc=await PluginDB[_0x1baa07(0x93)]({'where':{'name':_0x5f381c}});if(_0x2adcbc[_0x1baa07(0xa4)]<0x1)return _0x2c2025[_0x1baa07(0xa3)](_0x1baa07(0x94));else await _0x2adcbc[0x0][_0x1baa07(0x91)](),delete require[_0x1baa07(0xb0)][require[_0x1baa07(0xaf)]('./'+_0x5f381c+_0x1baa07(0xa8))],fs[_0x1baa07(0xa2)](__dirname+'/'+_0x5f381c+_0x1baa07(0xa8)),await _0x2c2025[_0x1baa07(0xa3)](_0x1baa07(0xb2)+_0x5f381c+_0x1baa07(0xa7));});
+const { command, getUrl } = require("../lib");
+const got = require("got");
+const fs = require("fs");
+const { PluginDB, installPlugin } = require("../lib/database/plugins");
+
+
+
+pnix(
+  {
+    pattern: "install",
+    fromMe: true,
+    desc: "Installs External plugins",
+    type: "owner",
+  },
+  async (message, match) => {
+    if (!match) return await message.sendMessage("_Send a plugin url_");
+
+    try {
+      var url = new URL(match);
+    } catch (e) {
+      console.log(e);
+      return await message.sendMessage("_Invalid Url_");
+    }
+
+    if (url.host === "gist.github.com") {
+      url.host = "gist.githubusercontent.com";
+      url = url.toString() + "/raw";
+    } else {
+      url = url.toString();
+    }
+    var plugin_name;
+    var { body, statusCode } = await got(url);
+    if (statusCode == 200) {
+      var comand = body.match(/(?<=pattern:) ["'](.*?)["']/);
+      plugin_name = comand[0].replace(/["']/g, "").trim().split(" ")[0];
+      if (!plugin_name) {
+        plugin_name = "__" + Math.random().toString(36).substring(8);
+      }
+      fs.writeFileSync(__dirname + "/" + plugin_name + ".js", body);
+      try {
+        require("./" + plugin_name);
+      } catch (e) {
+        fs.unlinkSync(__dirname + "/" + plugin_name + ".js");
+        return await message.sendMessage("Invalid Plugin\n ```" + e + "```");
+      }
+
+      await installPlugin(url, plugin_name);
+
+      await message.sendMessage(`_New plugin installed : ${plugin_name}_`);
+    }
+  }
+);
+
+
+
+pnix(
+  { pattern: "listplugin", fromMe: true, desc: "plugin list", type: "owner" },
+  async (message, match) => {
+    var mesaj = "";
+    var plugins = await PluginDB.findAll();
+    if (plugins.length < 1) {
+      return await message.sendMessage("_No external plugins installed_");
+    } else {
+      plugins.map((plugin) => {
+        mesaj +=
+          "```" +
+          plugin.dataValues.name +
+          "```: " +
+          plugin.dataValues.url +
+          "\n";
+      });
+      return await message.sendMessage(mesaj);
+    }
+  }
+);
+
+
+
+command(
+  {
+    pattern: "remove(?: |$)(.*)",
+    fromMe: true,
+    desc: "Remove external plugins",
+    type: "owner",
+  },
+  async (message, match) => {
+    if (!match) return await message.sendMessage("_Need a plugin name_");
+
+    var plugin = await PluginDB.findAll({ where: { name: match } });
+
+    if (plugin.length < 1) {
+      return await message.sendMessage("_Plugin not found_");
+    } else {
+      await plugin[0].destroy();
+      delete require.cache[require.resolve("./" + match + ".js")];
+      fs.unlinkSync(__dirname + "/" + match + ".js");
+      await message.sendMessage(`Plugin ${match} deleted`);
+    }
+  }
+);
