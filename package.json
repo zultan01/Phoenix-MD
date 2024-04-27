@@ -49,6 +49,7 @@
     "koyeb-api": "^1.0.4",
     "moment-timezone": "^0.5.37",
     "node-cron": "^3.0.2",
+    "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.0",
     "nodemailer": "^6.9.8",
     "openai": "^4.17.4",
