@@ -1,7 +1,7 @@
 const { pnix } = require("../lib");
 const got = require("got");
 const fs = require("fs");
-const { PluginDB, installPlugin } = require("../database").Plugins;
+const { PluginDB, installPlugin } = require("../lib/database/plugins");
 
 pnix(
   {
