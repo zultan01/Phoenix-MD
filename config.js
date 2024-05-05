@@ -6,7 +6,7 @@ if (fs.existsSync("config.env"))
 const toBool = (x) => x == "true";
 
 DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
-
+let HANDLER = "false";
 
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
@@ -30,7 +30,7 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   LANG: process.env.LANG || "EN",
   //_________________________________________________________________________________________________________________________________
-  HANDLERS: process.env.HANDLER === "false" || '^[.]',
+  HANDLERS: process.env.PREFIX || '^[.]',
   //_________________________________________________________________________________________________________________________________
   RMBG_KEY: process.env.RMBG_KEY || false,
   //_________________________________________________________________________________________________________________________________
