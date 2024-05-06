@@ -12,7 +12,7 @@
       "required": true
     },
     "PREFIX": {
-      "description": "Enter Prefix For Commands",
+      "description": "Enter Prefix For Commands Use Emojis Also",
       "required": false,
       "value": "."
     },
