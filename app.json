@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Phoenix-MD Simple WhatsApp Bot",
   "logo": "https://i.imgur.com/T78fhJk.jpeg",
-  "keywords": ["whatsapp", "bot", "md", "multi-device", "Phoenix", "Phoenix-MD", "wabot", "termux-bot", "sc-bot"],
+  "keywords": ["whatsapp", "bot", "md", "multi-device", "Phoenix", "Phoenix-MD", "wabot", "termux-bot", "sc-bot", "plugins", "AbhishekSuresh", "Whatsapp-bot-md"],
   "repository": "https://github.com/AbhishekSuresh2/Phoenix-MD",
   "stack": "container",
   "env": {
@@ -31,7 +31,7 @@
       "required": false,
       "value": "🎯𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳;𝙰𝚋𝚑𝚒𝚜𝚑𝚎𝚔 𝚂𝚞𝚛𝚎𝚜𝚑☘️"
     },
-    "AUTO_DATA": {
+    "AUDIO_DATA": {
       "description": "Enter Your Audio Data",
       "required": false,
       "value": "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg"
@@ -51,7 +51,7 @@
       "required": false,
       "value": "Phoenix-MD"
     },
-    "WORK_TYPE": {
+    "MODE": {
       "description": "Enter Your Mode Type public For Public Otherwise Type private",
       "required": false,
       "value": "public"
