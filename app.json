@@ -89,6 +89,11 @@
   "value": "false",
   "required": false
    },
+    "AUTO_READ_MSG": {
+  "description": "If You Want To Read Messages Automatically Type true. Otherwise, Type false",
+  "value": "false",
+  "required": false
+   },
     "AUTO_STATUS_READ": {
       "description": "If You Want To View Status Automatically, Type true. Otherwise, Type false",
       "required": false,
