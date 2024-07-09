@@ -48,6 +48,7 @@
     "jsdom": "^20.0.0",
     "javascript-obfuscator": "^4.1.0",
     "koyeb-api": "^1.0.4",
+    "mongoose": "^8.5.0",
     "moment-timezone": "^0.5.37",
     "node-cron": "^3.0.2",
     "node-gtts": "^2.0.2",
