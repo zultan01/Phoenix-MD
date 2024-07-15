@@ -30,8 +30,12 @@ Fork The Repo
 
 ## Phoenix-MD Deploy Method
 
+### Deploy Actions/WorkFlows(Free 24/7 Trick)
 
-### Deploy Codespace
+<a href="https://youtu.be/ZSwJtaN0BUk?si=FOsYpMs4WbvBFCpY"><img title="Phoenix-MD Deploy Actions/WorkFlows" src="https://img.shields.io/badge/Free Deploy Tutorial-h?color=black&style=for-the-badge&logo=visualstudiocode"></a>
+
+
+### Deploy Codespace(Free)
 
 <a href="https://github.com/codespaces/new"><img title="Phoenix-MD Deploy CodeSpace" src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode"></a>
 
